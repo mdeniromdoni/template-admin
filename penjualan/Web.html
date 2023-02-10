@@ -5,20 +5,20 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>template admin</title>
-    <link rel="stylesheet" href="../adm.css" />
+    <link rel="stylesheet" href="../css/adm.css" />
     <!-- Boxicons CDN link -->
     <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
   </head>
   <body>
-    <div class="sidebar ">
+    <div class="sidebar">
       <div class="logo-details">
-        <i class='bx bxs-store-alt'></i>
+        <i class="bx bxs-store-alt"></i>
         <span class="logo_name">Toko Bangunan</span>
       </div>
       <ul class="nav-links">
         <li>
-          <a href="../index.html">
-            <i class='bx bx-store-alt'></i>
+          <a href="../dashboard.html">
+            <i class="bx bx-store-alt"></i>
             <span class="link_name">Dashboard</span>
           </a>
           <ul class="sub-menu blank">
@@ -28,13 +28,13 @@
         <li>
           <div class="icon-link">
             <a href="Penjualan.html">
-              <i class='bx bx-trending-up'></i>
+              <i class="bx bx-trending-up"></i>
               <span class="link_name">Penjualan</span>
             </a>
             <i class="bx bxs-chevron-down arrow"></i>
           </div>
           <ul class="sub-menu">
-            <li><a href="#" class="link_name" >Penjualan</a></li>
+            <li><a href="#" class="link_name">Penjualan</a></li>
             <li><a href="Web.html">Web Design</a></li>
             <li><a href="Login.html">login from</a></li>
             <li><a href="Card.html">card design</a></li>
@@ -43,7 +43,7 @@
         <li>
           <div class="icon-link">
             <a href="../pembelian/Pembelian.html">
-              <i class='bx bx-cart-add'></i>
+              <i class="bx bx-cart-add"></i>
               <span class="link_name">Pembelian</span>
             </a>
             <i class="bx bxs-chevron-down arrow"></i>
@@ -54,11 +54,11 @@
             <li><a href="../pembelian/css.html">css</a></li>
           </ul>
         </li>
-        
+
         <li>
           <div class="icon-link">
             <a href="Manajemen.html">
-              <i class='bx bxs-user'></i>
+              <i class="bx bxs-user"></i>
               <span class="link_name">Manajemen</span>
             </a>
             <i class="bx bxs-chevron-down arrow"></i>
@@ -71,7 +71,7 @@
         <li>
           <div class="icon-link">
             <a href="Retur.html">
-              <i class='bx bx-repost'></i>
+              <i class="bx bx-repost"></i>
               <span class="link_name">Retur</span>
             </a>
             <i class="bx bxs-chevron-down arrow"></i>
@@ -80,13 +80,12 @@
             <li><a class="link_name" href="#">Retur</a></li>
             <li><a href="#">Return Penjualan</a></li>
             <li><a href="#">Return Pembelian</a></li>
-            
           </ul>
         </li>
         <li>
           <div class="icon-link">
             <a href="Payment">
-              <i class='bx bx-dollar-circle'></i>
+              <i class="bx bx-dollar-circle"></i>
               <span class="link_name">Payment</span>
             </a>
             <i class="bx bxs-chevron-down arrow"></i>
@@ -99,7 +98,7 @@
         <li>
           <div class="icon-link">
             <a href="Laporan.html">
-              <i class='bx bx-file'></i>
+              <i class="bx bx-file"></i>
               <span class="link_name">Laporan</span>
             </a>
             <i class="bx bxs-chevron-down arrow"></i>
@@ -120,47 +119,45 @@
           </ul>
         </li>
         <li>
-        <div class="profile-details">
-          <div class="profile-content">
-                <img src="" alt="" />
+          <div class="profile-details">
+            <div class="profile-content">
+              <img src="" alt="" />
             </div>
             <div class="name-job">
-                <div class="profile_name">MDR</div>
-                <div class="job">design</div>
+              <div class="profile_name">MDR</div>
+              <div class="job">design</div>
             </div>
-                <i class="bx bx-log-out"></i>
-        </div>
+            <i class="bx bx-log-out"></i>
+          </div>
         </li>
-    </ul>
-  </div>
-  
-  <section class="home-section">
-    <div class="home-content">
-      <i class="bx bx-menu"></i>
-      <span class="text">Drop down</span>
+      </ul>
     </div>
-    <main>
-      <div class="page-header">
-         <h1>web</h1>
-         <small>Home / Dashboard</small>
-       </div>
-   </main>
+
+    <section class="home-section">
+      <div class="home-content">
+        <i class="bx bx-menu"></i>
+        <span class="text">Drop down</span>
+      </div>
+      <main>
+        <div class="page-header">
+          <h1>web</h1>
+          <small>Home / Dashboard</small>
+        </div>
+      </main>
     </section>
-    
-   
+
     <script>
       let arrow = document.querySelectorAll(".arrow");
-      for (var i = 0; i < arrow.length; i++){
-        arrow[i].addEventListener('click', (e)=> {
+      for (var i = 0; i < arrow.length; i++) {
+        arrow[i].addEventListener("click", (e) => {
           let arrowParent = e.target.parentElement.parentElement;
-          arrowParent.classList.toggle('showMenu');
-          
+          arrowParent.classList.toggle("showMenu");
         });
       }
-      
+
       let sidebar = document.querySelector(".sidebar");
       let sidebarBtn = document.querySelector(".bx-menu");
-      sidebarBtn.addEventListener("click", ()=>{
+      sidebarBtn.addEventListener("click", () => {
         sidebar.classList.toggle("close");
       });
     </script>
