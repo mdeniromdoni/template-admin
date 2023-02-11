@@ -252,9 +252,8 @@ table {
   cursor: pointer;
   display: block;
   margin: 20px auto;
-  background: #292929;
+  background: white;
   border: 0;
-
   border-radius: 30px;
 }
 
